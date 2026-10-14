@@ -1,0 +1,68 @@
+export const theme = {
+  colors: {
+    primary: "#0b3d6b",
+    primaryDark: "#0a3260",
+    accent: "#d4a849",
+    accentLight: "rgba(212, 168, 73, 0.12)",
+    background: "#f8f7f4",
+    surface: "#ffffff",
+    foreground: "#0f1923",
+    secondary: "#e8f0f7",
+    muted: "#edeae3",
+    mutedForeground: "#6b7280",
+    border: "rgba(15, 25, 35, 0.1)",
+    danger: "#d4183d",
+    success: "#16a34a",
+    warning: "#faad14",
+  },
+  typography: {
+    h1: { fontSize: 26, lineHeight: 34, fontWeight: "700" as const },
+    h2: { fontSize: 20, lineHeight: 28, fontWeight: "700" as const },
+    h3: { fontSize: 16, lineHeight: 24, fontWeight: "600" as const },
+    bodyLarge: { fontSize: 15, lineHeight: 22, fontWeight: "500" as const },
+    body: { fontSize: 14, lineHeight: 20, fontWeight: "400" as const },
+    caption: { fontSize: 12, lineHeight: 16, fontWeight: "400" as const },
+    tag: { fontSize: 11, lineHeight: 14, fontWeight: "600" as const },
+  },
+  spacing: {
+    xs: 4,
+    sm: 8,
+    md: 12,
+    lg: 16,
+    xl: 20,
+    xxl: 24,
+    xxxl: 32,
+  },
+  radius: {
+    sm: 8,
+    md: 12,
+    lg: 16,
+    xl: 20,
+    full: 9999,
+  },
+  shadows: {
+    card: {
+      shadowColor: "#000",
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.06,
+      shadowRadius: 8,
+      elevation: 2,
+    },
+    hover: {
+      shadowColor: "#0b3d6b",
+      shadowOffset: { width: 0, height: 6 },
+      shadowOpacity: 0.12,
+      shadowRadius: 16,
+      elevation: 4,
+    },
+    modal: {
+      shadowColor: "#000",
+      shadowOffset: { width: 0, height: 12 },
+      shadowOpacity: 0.25,
+      shadowRadius: 24,
+      elevation: 8,
+    },
+  },
+} as const;
+
+export type Theme = typeof theme;
